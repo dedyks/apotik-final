@@ -23,29 +23,35 @@
             </div>
             <div class="ibox-content">
                 <form class="form-horizontal" action="<?php echo base_url()?>mutasi/simpan" method="POST" >
+                <div class="form-group"><label class="col-lg-2 control-label">Tujuan</label>
+
+<div class="col-lg-10"><input type="text" placeholder="tujuan" name="tujuan" class="form-control"> <span class="help-block m-b-none">Tujuan mutasi barang.</span>
+</div>
+</div>
+
                   <div class="form-group"><label class="col-lg-2 control-label">Item</label>
 
-                      <div class="col-lg-10"><input type="text" placeholder="Email" name="item" class="form-control"> <span class="help-block m-b-none">Example block-level help text here.</span>
+                      <div class="col-lg-10"><input type="text" placeholder="Email" name="item" class="form-control"> <span class="help-block m-b-none">Barang yang berpindah.</span>
                       </div>
                   </div>
                   <div class="form-group"><label class="col-lg-2 control-label">Sediaan</label>
 
-                      <div class="col-lg-10"><input type="text" name="sediaan" placeholder="Password" class="form-control"></div>
+                      <div class="col-lg-10"><input type="text" name="sediaan" placeholder="Tablet, Strip, Dll" class="form-control"></div>
                   </div>
 
                   <div class="form-group"><label class="col-lg-2 control-label">Jumlah</label>
 
-                      <div class="col-lg-10"><input type="text" name="jumlah" placeholder="Email" class="form-control"> <span class="help-block m-b-none">Example block-level help text here.</span>
+                      <div class="col-lg-10"><input type="text" name="jumlah" placeholder="jumlah" class="form-control"> <span class="help-block m-b-none">Jumlah Barang.</span>
                       </div>
                   </div>
                   <div class="form-group"><label class="col-lg-2 control-label">Keterangan</label>
 
-                      <div class="col-lg-10"><input type="text" name="keterangan" placeholder="Email" class="form-control"> <span class="help-block m-b-none">Example block-level help text here.</span>
+                      <div class="col-lg-10"><input type="text" name="keterangan" placeholder="ket" class="form-control"> <span class="help-block m-b-none">Example block-level help text here.</span>
                       </div>
                   </div>
                   <div class="form-group"><label class="col-lg-2 control-label">Khasiat</label>
 
-                      <div class="col-lg-10"><input type="text" name="khasiat" placeholder="Email" class="form-control"> <span class="help-block m-b-none">Example block-level help text here.</span>
+                      <div class="col-lg-10"><input type="text" name="khasiat" placeholder="efek" class="form-control"> <span class="help-block m-b-none">Example block-level help text here.</span>
                       </div>
                   </div>
                   <div class="form-group">

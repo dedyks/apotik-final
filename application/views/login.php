@@ -7,6 +7,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link href="<?php echo base_url()?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="<?php echo base_url()?>css/animate.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>css/style.css" rel="stylesheet">
     <!-- Le styles -->
 	<link href="<?php echo base_url()?>css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo base_url()?>css/bootstrap-responsive.css" rel="stylesheet">
@@ -24,8 +29,44 @@
       <script src="js/html5shiv.js"></script>
     <![endif]-->
   </head>
+  <body class="gray-bg">
 
-  <body class="blue-login">
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">IN+</h1>
+
+            </div>
+            <h3>Welcome to IN+</h3>
+            <p>Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
+                <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
+            </p>
+            <p>Login in. To see it in action.</p>
+            <form class="m-t" id="logform" name="logform" role="form" action="<?php echo base_url()?>home/loginAct" method="post">
+                <div class="form-group">
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Username" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="">
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+
+                <a href="#"><small>Forgot password?</small></a>
+                <p class="text-muted text-center"><small>Do not have an account?</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="register.html">Create an account</a>
+            </form>
+            <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small> </p>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="<?php echo base_url()?>js/jquery-2.1.1.js"></script>
+    <script src="<?php echo base_url()?>js/bootstrap.min.js"></script>
+
+</body>
+
+  <!-- <body class="blue-login">
 
     <div class="login-container">
         <div class="login-header bordered">
@@ -77,9 +118,11 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/jquery-ui-1.10.3.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="<?php echo base_url()?>js/jquery-1.10.2.js"></script>
+    <script src="<?php echo base_url()?>js/jquery-ui-1.10.3.js"></script>
+    <script src="<?php echo base_url()?>js/bootstrap.js"></script>
+    <script src="<?php echo base_url()?>js/jquery-2.1.1.js"></script>
+    <script src="<?php echo base_url()?>js/bootstrap.min.js"></script>
 
 
 
@@ -89,5 +132,5 @@
         });
     </script>
 
-  </body>
+  </body> -->
 </html>

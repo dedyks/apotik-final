@@ -8,19 +8,19 @@
     <meta name="author" content="">
 
 
-    <link href="<?php echo base_url()?>css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>css/plugins/iCheck/custom.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>css/animate.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>css/style.css" rel="stylesheet">
 
     <!-- Le styles -->
     <link href="<?php echo base_url()?>css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo base_url()?>css/bootstrap-responsive.css" rel="stylesheet">
     <link href="<?php echo base_url()?>css/stylesheet.css" rel="stylesheet">
-    <script src="<?php echo base_url()?>js/jquery-1.10.2.js"></script>
-    <script src="<?php echo base_url()?>js/jquery-ui-1.10.3.js"></script>
+    <link href="<?php echo base_url()?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>font-awesome/css/font-awesome.css" rel="stylesheet">
 
+    <!-- Data Tables -->
+      <!-- Mainly scripts -->
+
+    <!-- Data Tables -->
+  
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
