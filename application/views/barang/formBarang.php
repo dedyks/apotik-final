@@ -9,18 +9,18 @@
 
 	function save(){
 		$.ajax({
-			url:'<?php echo base_url(); ?>barang/actBarang/',		 
+			url:'<?php echo base_url(); ?>barang/actBarang/',
 			type:'POST',
 			data:$('#form_barang').serialize(),
-			success:function(data){ 
+			success:function(data){
 			  	if(data!=''){
 					 $( "#infodlg" ).html(data);
-					 $( "#infodlg" ).dialog({ title:"Info...", draggable: false});					 
+					 $( "#infodlg" ).dialog({ title:"Info...", draggable: false});
 				} else {
 					 window.location="<?php echo base_url() ?>barang/listbarang";
 				}
 			 }
-		});		
+		});
 	}
 	function confirmdlg(){
 					$("#confirm").dialog({
@@ -32,7 +32,7 @@
 					 height: 'auto',
 					 buttons: {
 					 "Ya": function(){
-						 save();   
+						 save();
 						  $(this).dialog("close");
 					  },
 					  "Tutup": function(){
@@ -40,9 +40,7 @@
 						}
 					 }
 				  });
- 
 			}
-			
 	</script>
 <form method="post" class="form1" id="form_barang" name="form_barang"/>
   <table>
@@ -63,10 +61,10 @@
       <td>Kategori </td>
       <td><select name="kategori">
         <?php  if(!empty($katBarang)) { foreach($katBarang as $row) { ?>
-         
+
 						?>
         <option value='<?php echo $row->id ?>'><?php echo $row->kategori ?></option>
-        <?php	
+        <?php
 					}
 				}
 				?>
@@ -76,13 +74,13 @@
       <td><input type="text" name="stok" maxlength="10" size="7" value="<?php echo isset($infouser['stok']) ? $infouser['stok'] : ''; ?>"/></td>
     </tr>
     <tr>
-      <td>Satuan</td>
+      <td>Sediaan</td>
       <td><select name="satuan">
         <?php  if(!empty($katSatuan)) { foreach($katSatuan as $row2) { ?>
-         
+
 						?>
         <option value='<?php echo $row2->id ?>'><?php echo $row2->satuan ?></option>
-        <?php	
+        <?php
 					}
 				}
 				?>
@@ -106,4 +104,4 @@
     </tr>
 </table>
 </form>
- <div id="confirm" style="display:none"> Anda Ingin Meyimpan data ini</div>     
+ <div id="confirm" style="display:none"> Anda Ingin Meyimpan data ini</div>

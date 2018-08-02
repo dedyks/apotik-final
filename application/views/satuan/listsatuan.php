@@ -1,5 +1,5 @@
 	<script type="text/javascript">
-	$(document).ready(function() { 
+	$(document).ready(function() {
 	  $(function() {
 		applyPagination();
 		function applyPagination() {
@@ -20,19 +20,19 @@
 			 return false;
 			});
 		}
-	  }); 
+	  });
 	});
 	  function detailData(id){
 		 $("#tr"+id).toggle();
 		 $.ajax({
-			url:'<?php echo base_url(); ?>cuti/detailPegawai/'+id,		 
+			url:'<?php echo base_url(); ?>cuti/detailPegawai/'+id,
 			type:'POST',
 			data:$('#frmsave').serialize(),
-			success:function(data){ 
-				$("#detail"+id).html('');  
-				$("#detail"+id).append(data);  
-			}  
-		});		
+			success:function(data){
+				$("#detail"+id).html('');
+				$("#detail"+id).append(data);
+			}
+		});
 	 }
 	</script>
  <div id="tabledata">
@@ -56,28 +56,28 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-									 	<?php  if(!empty($query)) { foreach($query as $row) { ?> 
+									 	<?php  if(!empty($query)) { foreach($query as $row) { ?>
                                         <tr>
                                             <td style="text-align:center;font-weight:bold">
 											<span class="label label-warning"><?php echo $row->id_satuan ?></span>
 											</td>
-                                            
+
                                             <td><?php echo $row->satuan ?></td>
-                                       
+
                                             <td>
                                                 <div class="btn-group">
                                                     <a class="btn" href="<?php echo base_url().'satuan/form/'.$row->id ?>">
-													<i class="icon-arrow-right"></i></a>
-                                                    <a class="btn" href="#"><i class="icon-trash"></i></a>                                                </div>                                            </td>
+													<i class="fa fa-edit"></i></a>
+                                                    <a class="btn" href="<?php echo base_url().'satuan/delete/'.$row->id ?>"><i class="fa fa-trash"></i></a>                                                </div>                                            </td>
                                         </tr>
-										
+
 										</tr>
 										<?php }} ?>
                                     </tbody>
                                 </table><br>
-								 <p class="pages"> <?php echo $this->pagination->create_links(); ?></p>		
+								 <p class="pages"> <?php echo $this->pagination->create_links(); ?></p>
 								 </div>
-								 
+
 								 <div class="table_options bottom_options">
 													</div>
 											  </div>

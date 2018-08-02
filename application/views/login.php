@@ -16,7 +16,7 @@
 	<link href="<?php echo base_url()?>css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo base_url()?>css/bootstrap-responsive.css" rel="stylesheet">
     <link href="<?php echo base_url()?>css/stylesheet.css" rel="stylesheet">
- 
+
     <!-- Le fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.html">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.html">
@@ -35,7 +35,7 @@
         <div>
             <div>
 
-                <h1 class="logo-name">IN+</h1>
+                <h1 class="logo-name">+</h1>
 
             </div>
             <h3>Welcome to IN+</h3>
@@ -132,5 +132,5 @@
         });
     </script>
 
-  </body> -->
+  </body> 
 </html>
