@@ -1,6 +1,6 @@
 <?php
 class satuan_model extends CI_Model{
-
+//cek
 	function satuan_model()
 	{
 		parent::__construct();
