@@ -46,6 +46,7 @@ class barang_model extends CI_Model{
 					}
 				}
 			}
+			//hehe
 
 		function expireBarang(){$menus='';
 		$judul=$this->input->post('judul');
