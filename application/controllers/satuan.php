@@ -30,7 +30,7 @@ class satuan extends CI_Controller {
 		$info=$this->satuan_model->getSatuan($id);
 			$data['infouser']['id']=$info->id;
 			$data['infouser']['id_satuan']=$info->id_satuan;
-			$data['infouser']['satuan']=$info->satuan;
+			$data['infouser']['sediaan']=$info->sediaan;
 
 		}
 		$data['id']=$id;

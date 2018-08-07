@@ -31,9 +31,9 @@ class barang_model extends CI_Model{
 				$judul=$this->input->post('judul');
 				$status=$this->session->userdata('STATUS');
 				$addTag="";
-				$query=$this->db->query("select *,apotik.id as id,kategori.kategori,satuan.satuan  from apotik
+				$query=$this->db->query("select *,apotik.id as id,kategori.kategori,sediaan.sediaan  from apotik
 				left join kategori on kategori.id=apotik.kategori
-				left join satuan on satuan.id=apotik.satuan
+				left join sediaan on sediaan.id=apotik.sediaan
 				order by id_barang DESC
 				");
 				 if ($query->num_rows() > 0) {
@@ -51,9 +51,9 @@ class barang_model extends CI_Model{
 		$judul=$this->input->post('judul');
 		$status=$this->session->userdata('STATUS');
 		$addTag="";
-		$query=$this->db->query("select *,barang.id as id,kategori.kategori,satuan.satuan  from barang
+		$query=$this->db->query("select *,barang.id as id,kategori.kategori,sediaan.sediaan  from barang
 		left join kategori on kategori.id=barang.kategori
-		left join satuan on satuan.id=barang.satuan
+		left join sediaan on sediaan.id=barang.sediaan
 		order by expired ASC
 		");
 		 if ($query->num_rows() > 0) {

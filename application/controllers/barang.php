@@ -91,7 +91,7 @@ class barang extends CI_Controller {
 			$data['infouser']['expired']=$info->expired;
 		}
 		$data['katBarang']=$this->barang_model->getKategoriBarang();
-		$data['katSatuan']=$this->barang_model->getSatuanBarang();
+		$data['katSediaan']=$this->barang_model->getSediaanBarang();
 		$data['id']=$id;
 		//$data['view']='barang/tambahBarang';
 		$this->load->view('header');

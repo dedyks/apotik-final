@@ -25,7 +25,7 @@ class laporan extends CI_Controller {
 
 	$data['query'] = $this->mutasi_model->riwayat_rekapresep();
  	$this->load->view('header');
-    $this->load->view('laporan/rekap_resep',$data);
+  $this->load->view('laporan/rekap_resep',$data);
   }
 
 	function rekap_delete($no){
@@ -107,7 +107,12 @@ class laporan extends CI_Controller {
 	}
 
 	function pengembalian(){
-		$this->load->view('header');
+
+			$this->load->model("mutasi_model");
+
+			$data['query'] = $this->mutasi_model->riwayat_rekapresep();
+		 	$this->load->view('header');
+		  $this->load->view('laporan/pengembalian',$data);
 
 	}
 

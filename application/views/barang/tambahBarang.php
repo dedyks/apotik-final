@@ -74,7 +74,7 @@
     </tr>
     <tr>
       <td>ID Barang </td>
-      <td><input type="text" name="id_barang" maxlength="5" size="5"    value="<?php echo isset($infouser['id_barang']) ? $infouser['id_barang'] : ''; ?> "/>
+      <td><input type="text" name="id_barang" maxlength="5" size="5">
         *</td>
     </tr>
     <tr>
@@ -101,7 +101,7 @@
     <tr>
       <td>Sediaan</td>
       <td><select name="satuan">
-        <?php  if(!empty($katSatuan)) { foreach($katSatuan as $row2) { ?>
+        <?php  if(!empty($katSediaan)) { foreach($katSediaan as $row2) { ?>
 
 						?>
         <option value='<?php echo $row2->sediaan ?>'><?php echo $row2->sediaan ?></option>

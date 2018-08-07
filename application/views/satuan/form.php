@@ -57,8 +57,8 @@
             *</td>
         </tr>
         <tr>
-          <td>Nama Barang </td>
-          <td><input type="text" name="satuan" maxlength="25" value="<?php echo isset($infouser['satuan']) ? $infouser['satuan'] : ''; ?>" />
+          <td>Nama Sediaan </td>
+          <td><input type="text" name="sediaan" maxlength="25" value="<?php echo isset($infouser['sediaan']) ? $infouser['sediaan'] : ''; ?>" />
             *</td>
         </tr>
 

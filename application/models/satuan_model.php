@@ -1,5 +1,5 @@
 <?php
-class satuan_model extends CI_Model{ 
+class satuan_model extends CI_Model{
 
 	function satuan_model()
 	{
@@ -10,7 +10,7 @@ class satuan_model extends CI_Model{
 			$judul=$this->input->post('judul');
 			$status=$this->session->userdata('STATUS');
 			$addTag="";
-			$query=$this->db->query("select *  from satuan 
+			$query=$this->db->query("select *  from sediaan
 			order by id DESC
 			LIMIT $limit,$offset");
 			 if ($query->num_rows() > 0) {
@@ -29,34 +29,34 @@ class satuan_model extends CI_Model{
 			$judul=$this->input->post('judul');
 			$status=$this->session->userdata('STATUS');
 			$addTag="";
-			$query=$this->db->query("select * from satuan where id='$id'");
+			$query=$this->db->query("select * from sediaan where id='$id'");
 			return $query->row();
 
-		}	
-	  
- 
+		}
+
+
 	function actSat(){
 		$id=$this->input->post('id');
 		$id_satuan=$this->input->post('id_satuan');
-		$nama=$this->input->post('satuan');
-		 
+		$nama=$this->input->post('sediaan');
+
 		$data=array(
 	 	 'id_satuan'=>$id_satuan,
-		 'satuan'=>$nama,
+		 'sediaan'=>$nama,
 		);
 		if($id==''){
 			$this->db->trans_start();
-			$this->db->insert('satuan',$data);
-			$this->db->trans_complete(); } 
+			$this->db->insert('sediaan',$data);
+			$this->db->trans_complete(); }
 			else {
 			$this->db->trans_start();
 			$this->db->where('id',$id);
-			$this->db->update('satuan', $data); 
+			$this->db->update('sediaan', $data);
 			$this->db->trans_complete();
-		}	
-		
-	}	
-   
+		}
+
+	}
+
 }
 // END RiskIssue_model Class
 

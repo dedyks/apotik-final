@@ -62,7 +62,7 @@
 											<span class="label label-warning"><?php echo $row->id_satuan ?></span>
 											</td>
 
-                                            <td><?php echo $row->satuan ?></td>
+                                            <td><?php echo $row->sediaan ?></td>
 
                                             <td>
                                                 <div class="btn-group">
