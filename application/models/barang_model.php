@@ -10,11 +10,12 @@ class barang_model extends CI_Model{
 			$judul=$this->input->post('judul');
 			$status=$this->session->userdata('STATUS');
 			$addTag="";
-			$query=$this->db->query("select *,barang.id as id,kategori.kategori,sediaan.sediaan  from barang
-			left join kategori on kategori.id=barang.kategori
-			left join sediaan on sediaan.id=barang.sediaan
-			order by id_barang DESC
-			");
+			// $query=$this->db->query("select *,barang.id as id,kategori.kategori,sediaan.sediaan  from barang
+			// left join kategori on kategori.id=barang.kategori
+			// left join sediaan on sediaan.id=barang.sediaan
+			// order by id_barang DESC
+			// ");
+			$query = $this->db->get('barang');
 			 if ($query->num_rows() > 0) {
 				foreach ($query->result() as $data) {
 					$datac[]=$data;

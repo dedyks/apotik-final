@@ -19,11 +19,11 @@ class barang extends CI_Controller {
 		$this->pagination->initialize($config);
 		/*----------------*/
 		$data['query']=$this->barang_model->listBarang($limit,$offset,1);
-		//$data['view']='barang/listbarang';
-		//$this->load->view('index',$data);
-    $this->load->view('header',$data );
-    $this->load->view('barang/master',$data );
-  //  $this->load->view('footer',$data );
+
+     $this->load->view('header',$data );
+     $this->load->view('barang/master',$data );
+
+
 	}
 
 	function apotik($limit='',$offset=''){
