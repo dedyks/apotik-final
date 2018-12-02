@@ -47,12 +47,12 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-$db['default']['dsn']='sqlsrv:host=apotik.database.windows.net;port=1433;dbname=apotik';
-$db['default']['hostname'] = '';
-$db['default']['username'] = 'dedy@apotik.database.windows.net';
+//$db['default']['dsn']='sqlsrv:host=apotik.database.windows.net;port=1433;dbname=apotik';
+$db['default']['hostname'] = 'apotik.mysql.database.azure.com';
+$db['default']['username'] = 'dedy@apotik';
 $db['default']['password'] = 'Kenapa29051997';
 $db['default']['database'] = 'apotik';
-$db['default']['dbdriver'] = 'sqlsrv';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
@@ -63,7 +63,6 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
-
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
