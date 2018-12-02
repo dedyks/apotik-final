@@ -47,11 +47,11 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-$db['default']['dsn']='sqlsrv:server = tcp:apotik.database.windows.net,1433; Database = apotik", "dedy", "Kenapa29051997';
-// $db['default']['hostname'] = 'apotik.database.windows.net';
-// $db['default']['username'] = 'dedy@apotik';
-// $db['default']['password'] = 'Kenapa29051997';
-// $db['default']['database'] = 'apotik';
+//$db['default']['dsn']='sqlsrv:server = tcp:apotik.database.windows.net,1433; Database = apotik", "dedy", "Kenapa29051997';
+$db['default']['hostname'] = 'apotik.database.windows.net';
+$db['default']['username'] = 'dedy@apotik';
+$db['default']['password'] = 'Kenapa29051997';
+$db['default']['database'] = 'apotik';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
