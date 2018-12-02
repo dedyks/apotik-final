@@ -47,7 +47,7 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-//$db['default']['dsn']='sqlsrv:host=apotik.database.windows.net;port=1433;dbname=apotik';
+$db['default']['dsn']='mysql:host=apotik.database.azure.com;port=3306;dbname=apotik';
 $db['default']['hostname'] = 'apotik.mysql.database.azure.com';
 $db['default']['username'] = 'dedy@apotik';
 $db['default']['password'] = 'Kenapa29051997';
