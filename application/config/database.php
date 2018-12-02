@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'tcp:apotik.database.windows.net,1433';
+$db['default']['hostname'] = 'apotik.database.windows.net';
 $db['default']['username'] = 'dedy';
 $db['default']['password'] = 'Kenapa29051997';
 $db['default']['database'] = 'apotik';
