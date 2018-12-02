@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']    = 'https://apotik.azurewebsites.net'; 
+$config['base_url']    = 'apotik.azurewebsites.net'; 
 
 
 /*
