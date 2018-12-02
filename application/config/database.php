@@ -47,11 +47,11 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-$db['default']['dsn']='mysql:host=apotik.database.azure.com;port=3306;dbname=apotik';
-$db['default']['hostname'] = 'apotik.mysql.database.azure.com';
-$db['default']['username'] = 'dedy@apotik';
-$db['default']['password'] = 'Kenapa29051997';
-$db['default']['database'] = 'apotik';
+$db['default']['dsn']='';
+$db['default']['hostname'] = getenv('BILLING_MYSQL_HOST');
+$db['default']['username'] = getenv('BILLING_MYSQL_USER');
+$db['default']['password'] = getenv('BILLING_MYSQL_PASS');
+$db['default']['database'] = getenv('BILLING_MYSQL_DB');
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
