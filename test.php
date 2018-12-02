@@ -5,6 +5,7 @@ class test {
 try {
     $conn = new PDO("sqlsrv:server = tcp:apotik.database.windows.net,1433; Database = apotik", "dedy", "{your_password_here}");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "berhasil";
 }
 catch (PDOException $e) {
     print("Error connecting to SQL Server.");
