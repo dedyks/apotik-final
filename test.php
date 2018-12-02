@@ -1,6 +1,6 @@
 <?php
 class test {
-    function index(){
+    function main(){
     // PHP Data Objects(PDO) Sample Code:
 try {
     $conn = new PDO("sqlsrv:server = tcp:apotik.database.windows.net,1433; Database = apotik", "dedy", "{your_password_here}");
