@@ -1,9 +1,7 @@
 <?php
-class test {
-    function main(){
-    // PHP Data Objects(PDO) Sample Code:
+
 try {
-    $conn = new PDO("sqlsrv:server = tcp:apotik.database.windows.net,1433; Database = apotik", "dedy", "{your_password_here}");
+    $conn = new PDO("sqlsrv:server = tcp:apotik.database.windows.net,1433; Database = apotik", "dedy", "Kenapa29051997");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "berhasil";
 }
@@ -17,6 +15,6 @@ $connectionInfo = array("UID" => "dedy@apotik", "pwd" => "Kenapa29051997", "Data
 $serverName = "tcp:apotik.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
-}
-}
+
+
 ?>
