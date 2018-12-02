@@ -49,7 +49,7 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'apotik.database.windows.net';
-$db['default']['username'] = 'dedy';
+$db['default']['username'] = 'dedy@apotik';
 $db['default']['password'] = 'Kenapa29051997';
 $db['default']['database'] = 'apotik';
 $db['default']['dbdriver'] = 'mysql';
