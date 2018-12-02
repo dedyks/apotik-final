@@ -48,9 +48,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
+$db['default']['hostname'] = 'tcp:apotik.database.windows.net,1433';
+$db['default']['username'] = 'dedy';
+$db['default']['password'] = 'Kenapa29051997';
 $db['default']['database'] = 'apotik';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
