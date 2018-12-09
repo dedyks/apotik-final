@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 $db['default']['dsn']='';
-$db['default']['hostname'] = getenv('BILLING_MYSQL_HOST');
-$db['default']['username'] = getenv('BILLING_MYSQL_USER');
-$db['default']['password'] = getenv('BILLING_MYSQL_PASS');
-$db['default']['database'] = getenv('BILLING_MYSQL_DB');
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
+$db['default']['database'] = 'apotik';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

@@ -1,10 +1,7 @@
 <?php
 class kategori_model extends CI_Model{ 
 
-	function kategori_model()
-	{
-		parent::__construct();
-	}
+
 	function listKategori($limit='',$offset='',$id=''){
 			$menus='';
 			$judul=$this->input->post('judul');

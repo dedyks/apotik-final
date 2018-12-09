@@ -1,10 +1,6 @@
 <?php
 class mutasi_model extends CI_Model{
 
-	function mutasi_model()
-	{
-		parent::__construct();
-	}
 
 	function simpan($data){
 

@@ -1,10 +1,7 @@
 <?php
 class beli_model extends CI_Model{ 
 
-	function beli_model()
-	{
-		parent::__construct();
-	}
+
 	function generateSupplier(){
 			$select='';
 			$select.='<select id="supplier" name="supplier">';

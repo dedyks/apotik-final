@@ -1,10 +1,7 @@
 <?php
 class barang_model extends CI_Model{
 
-	function barang_model()
-	{
-		parent::__construct();
-	}
+	
 	function listBarang($limit='',$offset='',$id=''){
 			$menus='';
 			$judul=$this->input->post('judul');

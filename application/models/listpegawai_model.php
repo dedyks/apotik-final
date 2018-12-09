@@ -1,10 +1,7 @@
 <?php
 class listpegawai_model extends CI_Model{ 
 
-	function listpegawai_model()
-	{
-		parent::__construct();
-	}
+
 	/* GET ARTIKEL */
 		function getListPegawai($limit='',$offset=''){
 			$menus='';

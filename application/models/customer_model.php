@@ -1,10 +1,7 @@
 <?php
 class customer_model extends CI_Model{ 
 
-	function customer_model()
-	{
-		parent::__construct();
-	}
+
 	function listCustomer($limit='',$offset='',$id=''){
 			$menus='';
 			$judul=$this->input->post('judul');

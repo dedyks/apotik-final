@@ -1,10 +1,7 @@
 <?php
 class jual_model extends CI_Model{ 
 
-	function jual_model()
-	{
-		parent::__construct();
-	}
+
 	 
 	function generateListBeli(){
 		$jumbeli=$this->input->post('jumbeli');

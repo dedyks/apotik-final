@@ -1,10 +1,7 @@
 <?php
 class user_model extends CI_Model{
 
-	function user_model()
-	{
-		parent::__construct();
-	}
+
 	function cek(){
 		$username=$this->input->post('username');
 		$password=md5($this->input->post('password'));

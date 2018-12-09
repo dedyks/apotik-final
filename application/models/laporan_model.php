@@ -1,10 +1,7 @@
 <?php
 class laporan_model extends CI_Model{ 
 
-	function laporan_model()
-	{
-		parent::__construct();
-	}
+
 	function listLaporanBeli($limit='',$offset='',$id=''){
 	$table='';
 	$table=' <table class="table multimedia table-striped table-hover">

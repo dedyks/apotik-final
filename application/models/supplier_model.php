@@ -1,10 +1,7 @@
 <?php
 class supplier_model extends CI_Model{ 
 
-	function supplier_model()
-	{
-		parent::__construct();
-	}
+	
 	function listSupplier($limit='',$offset='',$id=''){
 			$menus='';
 			$judul=$this->input->post('judul');
